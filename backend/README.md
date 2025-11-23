@@ -16,7 +16,7 @@ This directory contains the backend API for the Patent Development Platform, bui
 ## API Endpoints
 
 - `GET /` - Root endpoint with API information
-- `GET /health` - Health check endpoint  
+- `GET /health` - Health check endpoint
 - `GET /search` - Search for patents
 - `POST /search` - Search for patents (POST method)
 - `GET /patent/{patent_id}` - Get specific patent details

@@ -9,12 +9,16 @@ function App() {
   const handleSearch = async (query) => {
     setLoading(true)
     try {
-      // TODO: Implement API call to backend
       const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`)
-      const results = await response.json()
-      setSearchResults(results)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const data = await response.json()
+      // The backend returns { results: [...], total_count: number, query: string }
+      setSearchResults(data.results || [])
     } catch (error) {
       console.error('Search failed:', error)
+      setSearchResults([])
     } finally {
       setLoading(false)
     }

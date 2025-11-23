@@ -28,6 +28,7 @@ patent_dev_v0.1/
 ## Technologies Used
 
 ### Backend
+
 - **FastAPI** - Modern, fast web framework for building APIs
 - **Python 3.11.6** - Core programming language
 - **OpenAI** - AI integration for patent analysis
@@ -36,6 +37,7 @@ patent_dev_v0.1/
 - **Uvicorn** - ASGI server for FastAPI
 
 ### Frontend
+
 - **React** - UI library
 - **Vite** - Build tool and development server
 - **JavaScript/JSX** - Frontend programming
@@ -43,6 +45,7 @@ patent_dev_v0.1/
 ## Setup Instructions
 
 ### Prerequisites
+
 - Python 3.11.6
 - Node.js (for frontend development)
 - Git
@@ -50,12 +53,14 @@ patent_dev_v0.1/
 ### Backend Setup
 
 1. **Create and activate virtual environment:**
+
    ```bash
    python3.11 -m venv myenv
    source myenv/bin/activate  # On Windows: myenv\Scripts\activate
    ```
 
 2. **Install Python dependencies:**
+
    ```bash
    pip install -r backend/requirements.txt
    ```
@@ -70,11 +75,13 @@ patent_dev_v0.1/
 ### Frontend Setup
 
 1. **Navigate to frontend directory:**
+
    ```bash
    cd frontend
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
@@ -87,6 +94,7 @@ patent_dev_v0.1/
 ## Development
 
 ### Running the Backend
+
 ```bash
 # Activate virtual environment
 source myenv/bin/activate
@@ -97,6 +105,7 @@ uvicorn app:app --reload
 ```
 
 ### Running the Frontend
+
 ```bash
 cd frontend
 npm run dev
@@ -105,6 +114,7 @@ npm run dev
 ## API Endpoints
 
 The backend provides RESTful API endpoints for:
+
 - Patent search and retrieval
 - AI-powered patent analysis
 - Vector similarity search
